@@ -1,29 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+// import "bootstrap/dist/css/bootstrap.css";
+// import "react-notifications/lib/notifications.css";
 
-import './index.css';
-import * as serviceWorker from './serviceWorker';
+// import { NotificationContainer } from "react-notifications";
+import SavedList from "./component/SavedList";
 
-import App from './components/App';
-import Firebase, { FirebaseContext } from './components/Firebase';
+function App() {
+  return (
+    <>
 
+      <div className="container my-2">
+        <SavedList />
 
+      </div>
+    </>
+  );
+}
 
-Firebase.db.collection("users")
-.get()
-.then(querySnapshot => {
-  const data = querySnapshot.docs.map(doc => doc.data());
-  console.log(data); // array of cities objects
-});
-
-
-ReactDOM.render(
-	<FirebaseContext.Provider value={new Firebase()}>
-	<App />
-	</FirebaseContext.Provider>,
-	document.getElementById('root')
-	);
-
-serviceWorker.unregister();
-
-
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
