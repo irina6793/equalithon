@@ -1,21 +1,26 @@
-import React from "react";
+import React, {Component} from "react";
 import ReactDOM from "react-dom";
-// import "bootstrap/dist/css/bootstrap.css";
-// import "react-notifications/lib/notifications.css";
-
-// import { NotificationContainer } from "react-notifications";
+import './index.css';
 import SavedList from "./component/SavedList";
+import NavBar from './component/NavBar'
+import HomeContent from './component/HomeContent';
+import Image from './component/Image'
+
 
 function App() {
-  return (
-    <>
+	return (
+		<>
+		<NavBar />
+		<div className='rowC'>
+		<Image />
+		<HomeContent />
+		</div>
+		<div className="container my-2">
+		<SavedList />
 
-      <div className="container my-2">
-        <SavedList />
-
-      </div>
-    </>
-  );
+		</div>
+		</>
+		);
 }
 
 const rootElement = document.getElementById("root");
