@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from '../images/photo_temp.png'
+import pic from '../images/hands.jpg'
 
 function Image() {
   // Import result is the URL of your image

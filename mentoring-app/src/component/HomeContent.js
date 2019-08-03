@@ -29,13 +29,14 @@ class HomeContent extends Component {
       justify="center"
       alignItems="center"
       spacing={3}> 
-      <Grid item xs={6}>
+      <Grid item xs={10}>
       <Paper className="paper" align="center">
-      <div className="optionText">
+      <div className="rowC">
       Chats and Projects <br />
       Find all your ALLY communication here
-      </div>
       <Avatar><ChatBubble/></Avatar>
+            </div>
+
       </Paper>
       </Grid>
       </Grid>
@@ -46,12 +47,14 @@ class HomeContent extends Component {
       justify="center"
       alignItems="center"
       spacing={3}> 
-      <Grid item xs={6}>
+      <Grid item xs={10}>
       <Paper className="paper" align="center">
-      <div className="optionText">Find 1 to 1 Ally <br />
+      <div className="rowC">
+      Find 1 to 1 Ally <br />
       Make a commitment to regular meetings and connect to a great ally!
-      </div>
       <Avatar><People/></Avatar>
+            </div>
+
       </Paper>
       </Grid>
       </Grid>
@@ -62,13 +65,14 @@ class HomeContent extends Component {
       justify="center"
       alignItems="center"
       spacing={3}> 
-      <Grid item xs={6}>
+      <Grid item xs={10}>
       <Paper className="paper" align="center">
-      <div className="optionText">
+      <div className="rowC">
       Find Focused Allies <br />
       Search for allies for a focused short-term project
-      </div>
       <Avatar><PersonAdd/></Avatar>
+            </div>
+
       </Paper>
       </Grid>
       </Grid>
@@ -80,13 +84,14 @@ class HomeContent extends Component {
       justify="center"
       alignItems="center"
       spacing={3}> 
-      <Grid item xs={6}>
+      <Grid item xs={10}>
       <Paper className="paper" align="center">
-      <div className="optionText">
+      <div className="rowC">
       Update Profile <br />
       Keep your skill set and interests up to date!
-      </div>
       <Avatar><Refresh/></Avatar>
+            </div>
+
       </Paper>
       </Grid>
       </Grid>
